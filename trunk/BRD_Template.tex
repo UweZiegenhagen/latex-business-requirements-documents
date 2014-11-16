@@ -1,0 +1,350 @@
+\documentclass[english,12pt]{scrartcl}
+ 
+\usepackage{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{palatino}
+\usepackage{lastpage}
+\usepackage{booktabs}
+\usepackage{scrpage2}
+\usepackage{isodate} \isodate
+\usepackage{blindtext}
+ 
+\setlength{\parskip}{.333em}
+ 
+\usepackage{colortbl}
+\usepackage[table]{xcolor}
+ 
+% Definition of colors for tables
+\definecolor{cell}{RGB}{220,230,240}
+\definecolor{line}{RGB}{80,130,190}
+ 
+\renewcommand{\arraystretch}{1.25}
+ 
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{helvet}
+ 
+\newcommand{\comment}[1]{\textless\textit{#1}\textgreater\vspace*{1ex}}
+\newcommand{\project}{\textless Project 123\textgreater}
+ 
+\title{Business Requirements Document (BRD) for \project}
+\author{My name}
+ 
+\pagestyle{scrheadings}
+\setheadsepline[\textwidth]{1pt}{}
+ 
+\ihead{\today}
+\chead{}
+\ohead{\project}
+ 
+\ifoot{}  
+\cfoot{}
+\ofoot{\pagemark}
+ 
+ 
+\usepackage{hyperref}
+\hypersetup{%
+  colorlinks=true,   % color references
+  linkcolor = blue,  % Linkcolor blue
+  citecolor = blue,  % cite-color  blue
+  urlcolor = blue,  % cite-color blue
+  pdfpagemode=UseNone,  % PDF-Viewer startet ohne Inhaltsverzeichnis et.al.
+  pdfstartview=FitH} % PDF-Viewer benutzt beim Start bestimmte Seitenbreite
+ 
+\begin{document}
+\maketitle
+ 
+\vfill
+ 
+{\large
+\begin{description}
+\item [Status:] Draft 
+\item [Version:] 0.1
+\item [Authors:] AA
+\end{description}}
+ 
+\clearpage
+ 
+\tableofcontents
+ 
+\section{Document Change Control}
+ 
+\subsection{Document Scope}
+ 
+The scope of this requirements document will be to \comment{Describe high level goal of document}, and will include the following detail:
+ 
+\begin{itemize}
+\item \comment{Add Detail of what document will include}
+\item 
+\item 
+\end{itemize}
+ 
+\subsection{Document History}
+ 
+\begin{tabular}{p{0.1\textwidth}p{0.3\textwidth}p{0.15\textwidth}p{0.15\textwidth}p{0.15\textwidth}    }\toprule
+Version	& Change Description	&Author	&Date & Released \\ \midrule
+1.0 & 	Initial Document Creation	& My Name & 09.06.2012 & 09.06.2012 \\ \bottomrule
+\end{tabular}
+ 
+\subsection{Document Approvers}
+ 
+\begin{tabular}{p{0.25\textwidth}p{0.15\textwidth}p{0.125\textwidth}p{0.125\textwidth}p{0.2\textwidth}} \toprule
+Role&Name&Signed Off& Date & Signature \\ \midrule
+Business Approver & & 05.02.2012 & \\ \bottomrule
+\end{tabular}		
+ 
+ 
+\subsection{Document Guidelines}
+ 
+Requested Delivery Date: \comment{Enter Target Date for Final Version} 
+ 
+ 
+\begin{itemize}
+\item Draft or Final Version: \comment{xx.xx}
+\item Approvals via email will be stated as such under Signature column
+\item Above list of people will also approve the deployment of the system into production
+\end{itemize}
+ 
+\subsection{Document References}
+ 
+Documents below, related to the current initiative, have been created prior to or in conjunction with the Functional Requirements document and can be referenced for further detail:
+ 
+\begin{tabular}{p{0.2\textwidth}p{0.125\textwidth}p{0.12\textwidth}p{0.15\textwidth}p{0.2\textwidth}} \toprule
+Name &Date&Version & Author & Location \\ \midrule
+Dok1 & 05.02.2012 & 1.0 & AA & \\ \bottomrule
+\end{tabular}		
+ 
+\comment{Documents can include the PID, PAD, workshop material, workflows, etc.}
+ 
+ 
+\subsection{Abbreviations/Acronyms}
+ 
+\comment{List of terms worth to be explained}
+ 
+\begin{tabular}{p{0.2\textwidth}p{0.7\textwidth}} \toprule
+Abbreviation &  Explanation \\ \midrule
+$\alpha$ & The first letter in the Greek alphabet  \\ \bottomrule
+\end{tabular}	
+ 
+ 
+\section{Introduction}
+ 
+\subsection{Background / Business Problem}
+ 
+\comment{Provide business background and narrative around the issue the project is targeting.  Describe the business area clearly, how the business operates, what region is impacted, and provide a description of the current processing environment for which the project is directed at.  Talk about the current drawbacks of the current process and its impact on the business, IT, or Operations}
+ 
+\subsection{Purpose and Benefits}
+ 
+\comment{Discuss the project, its goals, and who is undertaking the effort.  Give a clear understanding of what the project benefits are and what will be accomplished.  If possible, include measurable benefits}
+ 
+\subsection{Project Scope}
+ 
+\comment{Detail what processes will be impacted by this project, how the project or process is being broken down (by phase or component if possible), and what applications might be involved.  A diagram can be included to provide further explanation or transparency.  Also clarify any items that are Out of Scope for this initiative}
+ 
+\subsection{Critical Success Factors}
+ 
+The following Critical Success Factors represent business driven criteria that, if met, will measure the success for the delivery of this initiative. 
+ 
+\begin{itemize}
+\item \comment{Add Criteria details}
+\item 
+\item 
+\end{itemize}
+ 
+\subsection{Requirements Governance}
+The following organizational chart displays the Steering Committee, the Core Project Team, and Subject Matter Experts assembled to achieve stated objectives:
+ 
+\comment{Provide a project org chart depicting the business, IT and Operations project leadership structure which will include groups/key individuals involved or directly impacted by the project, and any subject matter experts or oversight committee that are involved.  Org charts can be created in MS Visio or MS PowerPoint and pasted into the document}
+ 
+ 
+\subsection{User Groups Impacted}
+ 
+The primary users impacted by this initiative are listed below: 
+ 
+\begin{tabular}{p{0.25\textwidth}p{0.25\textwidth}p{0.35\textwidth}} \toprule
+User Group &	Location &	Role \\ \midrule
+aaa & bbb & ccc \\ \bottomrule
+\end{tabular}
+ 
+ 
+\subsection{Requirement Assumptions and Constraints}
+ 
+ 
+\comment{Requirement Assumptions and Constraints are future situations beyond the control of the requirement, whose outcomes influence the success of requirement. Examples of assumptions include: availability of a technical platform, legal changes and policy decisions, operations performing a necessary task in conjunction with the process change, etc.}
+ 
+\subsection{Open Issues}
+ 
+\comment{Section is used to show open issues at the time of signoff only (i.e. the document is being signed of with the knowledge of the open issues). The section can be used as a working area as the document is developed but all closed issues should be deleted before the quality gate.}
+ 
+\begin{tabular}{p{0.05\textwidth}p{0.35\textwidth}p{0.5\textwidth}} \toprule
+ID & Issue	& Resolution \\ \midrule
+1 & & 	\\ \bottomrule
+\end{tabular}
+ 
+ 
+\subsection{Dependencies and Risks}
+ 
+\comment{Dependencies and Risks are conditions that can create an impediment to the delivery and or implementation of the desired requirement.  These can be internal or external.  Examples include: legal requirements, technical standards, strategic decisions, external entities (e.g. a 3rd party supplier of data).  These can exist because of real business or IT conditions.}
+ 
+\section{Business Requirements}
+ 
+\subsection{Description of Current Business State}
+ 
+\comment{Include a high level business state diagram illustrating the current business processing environment.  Depending on the project this can include an accounting state or process state (will include user groups and systems).  Below the diagram include a narrative of the state}
+ 
+ 
+\subsection{Description of Proposed Business State}
+ 
+\comment{Include a high level business state diagram illustrating the proposed business processing environment.  Depending on the project this can include an accounting state or process state (will include user groups and systems).  Below the diagram include a narrative of the state}
+ 
+ 
+\subsection{Specific Business Requirements}
+ 
+ 
+\begin{tabular}{p{0.1\textwidth}p{0.25\textwidth}p{0.4\textwidth}p{0.1\textwidth}} \\ \toprule
+BR ID &	BR Name	&BR Description &	Priority \\ \midrule
+1 & & & \\ \bottomrule
+\end{tabular}
+ 
+ 
+\section{GAP Analysis (Current State vs. Future State)}
+ 
+\subsection{Current State}
+ 
+\comment{Include a state diagram illustrating the current processing environment.  Depending on the project this can include an accounting state, data state, system diagram, process state (will include user groups and systems), etc.}
+ 
+\subsection{Future State}
+ 
+\comment{Include a state diagram illustrating the current processing environment.  Depending on the project this can include an accounting state, data state, system diagram, process state (will include user groups and systems), etc.}
+ 
+\subsection{GAP Analysis}
+ 
+\comment{A list of gaps identified can be provided within a table in this section.}
+ 
+ 
+\section{Non-Functional Requirements}
+ 
+\comment{The following are examples of non-functional requirements: Language, Security, Compliance, etc. Within this section, also include Current Volumes and Potential Growth, Performance Requirements and Availability Requirements}
+ 
+\subsection{Current Volume and Potential Growth}
+ 
+\blindtext
+ 
+\subsection{Performance Requirements}
+ 
+\blindtext
+ 
+\subsection{Availability Requirements}
+ 
+\blindtext
+ 
+\subsection{Security Requirements}
+ 
+\blindtext
+ 
+\section{Specific Functional Requirements}
+ 
+The following are the Functional Requirements for Attachments. Each requirement has a unique identifier for tracking and traceability purposes.
+ 
+\begin{tabular}{p{0.1\textwidth}p{0.1\textwidth}p{0.6\textwidth}p{0.1\textwidth}} \\ \toprule
+FR ID &	BR ID & FR Description &	Priority \\ \midrule
+1 & & & \\ \bottomrule
+\end{tabular}
+ 
+ 
+ 
+ 
+\subsection{FR 1 - \comment{Title of FR1}}
+ 
+Provide functional details of FR1
+ 
+\subsection{FR 2 - \comment{Title of FR2}}
+ 
+Provide functional details of FR2
+ 
+\subsection{Usability Requirements / User Experience}
+ 
+Usability Requirements, including Screen Shots and Screen Maps, to be included within this section.
+ 
+\section{Planning Criteria}
+This chapter describes the planning criteria specific to the <name> system.
+ 
+\comment{Identify plans associated with the development of the new requirements, user acceptance testing, taking into consideration various activities involved right from the requirement development through development and testing, till the implementation. Interaction with other stakeholders should also be considered.}
+ 
+\subsection{Specific Testing Requirements}
+ 
+\comment{Summarise the specific requirements, which should be tested from a business perspective (for example, Industry-wide testing, Customer (external to DB) Acceptance testing, End-to-End testing, and so on.)}
+ 
+\subsection{Implementation/Transition Requirements}
+ 
+\comment{Describe the implementation requirements such as which requirement needs to be implemented in which region(s) and when, training, data migration, deployment related requirements, release schedule, and so on.}
+ 
+\comment{Identify the extent of training and communication (for example, circulars, brochures, memos) to be imparted to the impacted groups.}
+ 
+ 
+\section{Use Cases}
+ 
+\subsection{UC1 - \comment{Title of UC1}}
+ 
+\begin{enumerate}
+\item Brief Description \newline The use case details the steps to be performed by users to <enter the purpose of UC1>
+\item Actors
+ 
+\begin{itemize}
+\item <Enter name of application> User 
+\item <Enter name of application> System
+\end{itemize}
+ 
+ 
+\item Preconditions
+ 
+\begin{itemize}
+\item The user should be entitled to act on the case.
+\item Enter any other preconditions
+\end{itemize}
+ 
+ 
+\item Business Rules
+ 
+\begin{itemize}
+\item Add any specific business rules
+\end{itemize}
+ 
+\item Trigger 
+ 
+\begin{itemize}
+\item Enter the trigger for the use case to occur
+\end{itemize}
+ 
+\item Basic Flow of Events
+ 
+\begin{tabular}{p{0.2\textwidth}p{0.7\textwidth}} \toprule
+Step &	Description \\ \midrule
+1	&    \\ 
+2	&    \\ 
+3	&    \\ \bottomrule
+\end{tabular}
+ 
+\end{enumerate}
+ 
+\section{Appendix}
+ 
+\subsection{Appendix Item1 }
+ 
+\comment{Enter Details Here}
+ 
+\subsection{Appendix Item 2}
+ 
+\comment{Enter Details Here}
+ 
+\arrayrulecolor{line}
+\rowcolors{2}{cell}{white}
+\begin{tabular}{cclp{0.6\textwidth}} \toprule
+Date&Version & Author & Description \\ \midrule
+ 2012-07-06 & 1.0 & AA & Initial Version\\ 
+ 2013-10-10 & 2.0 & BB & \\ 
+ 2013-10-27 & 3.0 & CC & \\ 
+ 2014-11-14 & 4.0 & DD & \\ 
+ 2014-11-15 & 5.0 & EE & \\ \bottomrule
+\end{tabular}		
+\end{document}

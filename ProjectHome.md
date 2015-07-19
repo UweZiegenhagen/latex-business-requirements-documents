@@ -1,0 +1,1 @@
+Business Requirements Documents are documents to capture the requirements of business partners in IT and non-IT projects. The templates presented here are based on best practises from the financial industry.

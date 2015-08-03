@@ -10,7 +10,7 @@ According to the [BABOK](http://www.iiba.org/babok-guide/babok-guide-v2/babok-gu
 
 It helps the business analyst to capture the requirements from the various sources, prioritize and rank them.
 
-## Why Latex? ## 
+## Why Latex? ##
 
 I have been working with LaTeX for more than a decade and really enjoy preparing structured documents with it. It follows a strict syntax and can be easily transformed into or from other formats.
 
